@@ -2,9 +2,7 @@
     <div>
         <div class="global-loader" v-if="this.$store.state.application.showPageLoader">
             <div class="global-loader-bg"></div>
-            <div class="global-loader-content">
-                <Circle2/>
-            </div>
+            <div class="global-loader-content"></div>
         </div>
         <div id="page">
             <div id="content">
@@ -16,13 +14,10 @@
 
 <script lang="ts">
 import Vue from 'vue'
-const Circle2 = require('vue-loading-spinner')
 
 export default Vue.extend({
     name: 'App',
-    components: {
-        Circle2
-    },
+    components: { },
     methods: () => {
 
     }
